@@ -1,0 +1,31 @@
+{
+  "info": {
+    "_postman_id": "b1e1e1e1-1111-2222-3333-444455556666",
+    "name": "Nextra EHR Scheduling API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Postman collection for Nextra EHR Scheduling API (multi-clinic, multi-provider)"
+  },
+  "item": [
+    {
+      "name": "Recommend Appointment Slots",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clinicId\": \"c001\",\n  \"physicianId\": \"p001\",\n  \"patientId\": \"u123\",\n  \"preferredDate\": \"2025-07-10\",\n  \"durationMinutes\": 30\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/appointments/recommend",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["appointments", "recommend"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+backend/.env
+.env
+.vscode/
+backend/node_modules
+backend/dist
+nextra-ehr-scheduling.code-workspace
